@@ -6,10 +6,10 @@ class object_pool
 {
     public:
         void add(PoolItem& p);
-        void count();
-        void countActive();
-        void findByName(std::string name);
-        void findByRef(PoolItem& p);
+        int count();
+        int countActive();
+        PoolItem* findByName(std::string name);
+        PoolItem* findByRef(PoolItem& p);
         void activate();
         void deactivate();
         void update();
